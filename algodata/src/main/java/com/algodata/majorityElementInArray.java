@@ -8,7 +8,8 @@ import java.util.List;
 /*
  * Problem Description
  *
- * Given an array of size n, find the majority element. The majority element is the element that appears more than floor(n/2) times.
+ * Given an array of size n, find the majority element.
+ * The majority element is the element that appears more than floor(n/2) times.
  * You may assume that the array is non-empty and the majority element always exist in the array.
  *
  * Example :
@@ -37,21 +38,8 @@ public class majorityElementInArray {
         return element;
     };
 
-    static int forTest(List<Integer> A) {
-        HashMap<Integer, Integer> myDictionary = new HashMap<Integer, Integer>();
-        int element = 0;
-        for (Integer elem : A) {
-            Integer count = myDictionary.getOrDefault(elem, 0);
-            myDictionary.put(elem, count + 1);
-            if (myDictionary.get(elem) > A.size() / 2)
-                element = elem;
-        }
-        return element;
-    }
-
     public static void main(String[] args) {
-        List<Integer> list = new ArrayList<>(Arrays.asList(7, 3, 4, 5, 8, 7, 7, 7));
+        List<Integer> list = new ArrayList<>(Arrays.asList(7, 3, 4, 5, 8, 7, 7, 7, 7));
         Integer inter = majorityElementInArray.majorityElement(list);
-        Integer inter2 = majorityElementInArray.forTest(list);
     }
 }
