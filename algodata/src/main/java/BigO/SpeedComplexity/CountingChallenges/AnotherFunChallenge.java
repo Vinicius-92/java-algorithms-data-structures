@@ -1,4 +1,4 @@
-package BigO.CountingChallenges;
+package BigO.SpeedComplexity.CountingChallenges;
 
 public class AnotherFunChallenge {
 

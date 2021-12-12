@@ -1,4 +1,4 @@
-package BigO;
+package BigO.SpeedComplexity;
 
 import java.util.ArrayList;
 import java.util.Arrays;
