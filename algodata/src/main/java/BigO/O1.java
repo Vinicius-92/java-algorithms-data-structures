@@ -5,6 +5,9 @@ import java.util.Collections;
 
 public class O1 {
 
+    // This functions uses constant time, which is notation O(1)
+    // even when the amount of operations increase (2, 3,...100...)
+    // we still call it O(1) --> constant time
     static void firstBoxes(int[] boxes) {
         System.out.println(boxes[0]); // O(1)
         System.out.println(boxes[1]); // O(2)
