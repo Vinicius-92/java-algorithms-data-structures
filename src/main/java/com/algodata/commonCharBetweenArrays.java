@@ -13,6 +13,8 @@ package com.algodata;
     should return true;
  */
 
+import java.util.HashSet;
+
 public class commonCharBetweenArrays {
 
     static boolean commonCharQuadratic(char[] input1, char[] input2) {
@@ -26,17 +28,30 @@ public class commonCharBetweenArrays {
     }
 
     static boolean commonCharLinear(char[] input1, char[] input2) {
-
+        HashSet<Character> mySet = new HashSet<Character>();
+        for (char i : input1) {
+            mySet.add(i);
+        }
+        for (char i : input2) {
+            if (mySet.contains(i)) return true;
+            mySet.add(i);
+        }
         return false;
     }
 
     public static void main(String[] args) {
-        // Quadratic time solution -> O(n^2)
         char[] input1 = new char[] {'a', 'b', 'c', 'x'};
         char[] input2 = new char[] {'z', 'y', 'i'};
-        System.out.println(commonCharQuadratic(input1, input2));
         char[] input3 = new char[] {'a', 'b', 'c', 'x'};
         char[] input4 = new char[] {'z', 'y', 'x'};
+
+        // Quadratic time solution -> O(n^2), but if the array sizes are different
+        // that can be a O(a*b) notation
+        System.out.println(commonCharQuadratic(input1, input2));
+        System.out.println(commonCharQuadratic(input3, input4));
+
+        // Linear time solution -> O(n)
+        System.out.println(commonCharQuadratic(input1, input2));
         System.out.println(commonCharQuadratic(input3, input4));
     }
 }
