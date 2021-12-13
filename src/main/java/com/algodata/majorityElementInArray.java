@@ -41,5 +41,6 @@ public class majorityElementInArray {
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<>(Arrays.asList(7, 3, 4, 5, 8, 7, 7, 7, 7));
         Integer inter = majorityElementInArray.majorityElement(list);
+        System.out.println(inter);
     }
 }
