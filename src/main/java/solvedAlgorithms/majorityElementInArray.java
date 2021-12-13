@@ -1,4 +1,4 @@
-package com.algodata;
+package solvedAlgorithms;
 
 import java.util.ArrayList;
 import java.util.Arrays;

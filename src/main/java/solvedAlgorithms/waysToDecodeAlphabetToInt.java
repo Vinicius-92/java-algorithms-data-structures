@@ -1,4 +1,4 @@
-package com.algodata;
+package solvedAlgorithms;
 
 public class waysToDecodeAlphabetToInt {
 

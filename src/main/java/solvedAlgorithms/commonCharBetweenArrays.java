@@ -1,4 +1,4 @@
-package com.algodata;
+package solvedAlgorithms;
 
 /*
     Given 2 arrays, create a function that lets a user know (true/false) whether
@@ -17,6 +17,8 @@ import java.util.HashSet;
 
 public class commonCharBetweenArrays {
 
+    // This solution is has a higher speed complexity and lower space complexity
+    // Keep that in mind when approaching either solution
     static boolean commonCharQuadratic(char[] input1, char[] input2) {
         if (input1.length != 0 && input2.length != 0) {
             for (char c : input1) {
