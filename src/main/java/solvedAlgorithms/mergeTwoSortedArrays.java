@@ -17,13 +17,12 @@ public class mergeTwoSortedArrays {
             count++;
         }
 
-        for (int i = 0; i < merged.length -1; i++) {
+        for (int i = 0; i < merged.length - 1; i++) {
             int aux1 = merged[i];
             int aux2 = merged[i + 1];
             if (aux1 < aux2) {
                 merged[i] = aux1;
-            }
-            else {
+            } else {
                 merged[i] = aux2;
                 merged[i + 1] = aux1;
             }

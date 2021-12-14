@@ -6,7 +6,7 @@ public class OnPOW2 {
     // giving a new order of magnitude
     // O(n^2)
     static void logAllPairsOfArray (char[] input) {
-        for (int i = 1; i < input.length; i++) {
+        for (int i = 0; i < input.length; i++) {
             for (int j = 1; j < input.length; j++) {
                 System.out.printf("%c %c \n", input[i], input[j]);
             }
