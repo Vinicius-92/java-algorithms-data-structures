@@ -1,7 +1,5 @@
 package solvedAlgorithms;
 
-import java.util.Arrays;
-
 public class reverseString {
     static String reverse(String input) {
         char[] toReverse = input.toCharArray();
