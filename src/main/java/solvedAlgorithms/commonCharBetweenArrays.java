@@ -14,6 +14,8 @@ package solvedAlgorithms;
  */
 
 import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.List;
 
 public class commonCharBetweenArrays {
 
@@ -55,5 +57,7 @@ public class commonCharBetweenArrays {
         // Linear time solution -> O(n)
         System.out.println(commonCharQuadratic(input1, input2));
         System.out.println(commonCharQuadratic(input3, input4));
+
+        List<Integer> list = new LinkedList<>();
     }
 }
