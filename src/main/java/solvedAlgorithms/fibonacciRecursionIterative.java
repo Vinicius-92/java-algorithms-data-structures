@@ -1,10 +1,13 @@
 package solvedAlgorithms;
 
 public class fibonacciRecursionIterative {
+    // O(2^n) --> Exponential time
     static int fibonacciRecursion(int input) {
         if(input < 2) return input;
         return fibonacciRecursion(input - 1) + fibonacciRecursion(input - 2);
     }
+
+    // O(n) --> Linear
     static int fibonacciIterative(int input) {
         int[] arr = new int[input + 1];
         arr[0] = 0;
