@@ -16,7 +16,6 @@ import java.util.List;
 
 public class sumOfTwoNumbersFromReversedOrderLinkedList {
     static List<Integer> sumOfTwoNumbersFromList(List<Integer> input1, List<Integer> input2) {
-
         int i1 = 0;
         for (int i = input1.size() - 1; i >= 0; i--) {
             i1 = i1 * 10 + input1.get(i);
