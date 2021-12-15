@@ -118,7 +118,7 @@ class Main {
         myTree.insert(0);
         myTree.insert(25);
         System.out.println(myTree);
-        myTree.remove(1);
+//        myTree.remove(1);
         System.out.println(myTree);
 
         System.out.println(myTree.lookup(25));
