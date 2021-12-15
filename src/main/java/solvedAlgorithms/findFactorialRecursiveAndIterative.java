@@ -7,6 +7,7 @@ public class findFactorialRecursiveAndIterative {
     static int factorialRecursive(int input) {
         return input == 2 ? 2 : input * factorialRecursive(input - 1);
     }
+
     static int factorialIterative(int input) {
         int result = input;
         for (int i = input; i > 1; i--)
