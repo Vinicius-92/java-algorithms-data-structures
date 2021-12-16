@@ -13,6 +13,9 @@ public class Sorting {
         int[] arr = new int[] { 99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0 };
         BubbleSort(arr);
         System.out.println(Arrays.toString(arr));
+        int[] arr1 = new int[] { 99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0 };
+        SelectionSort(arr1);
+        System.out.println(Arrays.toString(arr1));
     }
 
     static void BubbleSort(int[] input) {
@@ -25,6 +28,20 @@ public class Sorting {
                     input[j + 1] = aux;
                 }
             }
+        }
+    }
+
+    static void SelectionSort(int[] input) {
+        for (int i = 0; i < input.length; i++) {
+            int min = i;
+            int temp = input[i];
+            for (int j = i + 1; j < input.length; j++) {
+                if (input[j] < input[min]) {
+                    min = j;
+                }
+            }
+            input[i] = input[min];
+            input[min] = temp;
         }
     }
 }
