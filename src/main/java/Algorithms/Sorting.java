@@ -16,6 +16,9 @@ public class Sorting {
         int[] arr1 = new int[] { 99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0 };
         SelectionSort(arr1);
         System.out.println(Arrays.toString(arr1));
+        int[] arr2 = new int[] { 99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0 };
+        InsertionSort(arr2);
+        System.out.println(Arrays.toString(arr2));
     }
 
     static void BubbleSort(int[] input) {
@@ -44,4 +47,18 @@ public class Sorting {
             input[min] = temp;
         }
     }
+
+    static void InsertionSort(int[] input) {
+        for (int j = 1; j < input.length; j++) {
+            int key = input[j];
+            int i = j-1;
+            while ( (i > -1) && ( input [i] > key ) ) {
+                input [i+1] = input [i];
+                i--;
+            }
+            input[i+1] = key;
+        }
+    }
+
+
 }
