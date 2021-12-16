@@ -70,6 +70,21 @@ public class BinaryTree {
         }
         return list;
     }
+
+    List<Integer> BreadthFirstSearchR(List<Integer> list, Queue<Node> queue) {
+        if (queue.size() == 0) {
+            return list;
+        }
+        Node currentNode = queue.poll();
+        list.add(currentNode.value);
+        if (currentNode.left != null) {
+            queue.add(currentNode.left);
+        }
+        if(currentNode.right != null) {
+            queue.add(currentNode.right);
+        }
+        return BreadthFirstSearchR(list, queue);
+    }
     // Unfinished remove method
 //    void remove(int value) {
 //        if (root == null) return;
@@ -141,8 +156,12 @@ class Main {
         myTree.insert(6);
         myTree.insert(15);
         myTree.insert(170);
-//        System.out.println(myTree);
         myTree.BreadthFirstSearch();
+        List<Integer> list = new ArrayList<>();
+        Queue<Node> queue = new LinkedTransferQueue<>();
+        queue.add(myTree.root);
+        List<Integer> myList = myTree.BreadthFirstSearchR(list, queue);
+        myList.forEach(System.out::println);
 
     }
 }
