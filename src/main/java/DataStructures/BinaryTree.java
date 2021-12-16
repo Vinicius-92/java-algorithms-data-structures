@@ -85,34 +85,43 @@ public class BinaryTree {
         }
         return BreadthFirstSearchR(list, queue);
     }
-    // Unfinished remove method
-//    void remove(int value) {
-//        if (root == null) return;
-//        // Setting up basic nodes to aux
-//        Node nodeToRemove = lookup(value);
-//        Node leafNode = root;
-//        Node temp = null;
-//        // finding the parent node
-//        while (true) {
-//            if (leafNode.right == nodeToRemove || leafNode.left == nodeToRemove) break;
-//            else if (leafNode.right.value < nodeToRemove.value) leafNode = leafNode.right;
-//            else leafNode = leafNode.right;
-//        }
-//        // setting up the temporary node to hold information of node that replaces to removed value
-//        if (nodeToRemove.right == null && nodeToRemove.left != null)
-//            temp = nodeToRemove.left;
-//        else if (nodeToRemove.right != null && nodeToRemove.left == null)
-//            temp = nodeToRemove.right;
-//        else if (nodeToRemove.right != null) // This line certifies that we have both nodes !null
-//            temp = nodeToRemove.right.left;
-//
-//        while (temp.left != null)
-//            temp = temp.left;
-//        // Pointing parent node to new child node
-//        if(leafNode.right == nodeToRemove) leafNode.right = temp;
-//        else leafNode.left = temp;
-//        // Repointing the children nodes of new positioned node
-//    }
+
+
+    List<Integer> DFSInOrder(List<Integer> list) {
+         return TraverseInOrder(root,  list);
+    }
+    List<Integer> TraverseInOrder(Node node, List<Integer> list) {
+        if (node.left != null)
+            TraverseInOrder(node.left, list);
+        list.add(node.value);
+        if (node.right != null)
+            TraverseInOrder(node.right, list);
+        return list;
+    }
+
+     List<Integer> DFSPostOrder(List<Integer> list) {
+        return TraversePostOrder(root, list);
+     }
+    List<Integer> TraversePostOrder(Node node, List<Integer> list) {
+        if (node.left != null)
+            TraversePostOrder(node.left, list);
+        if (node.right != null)
+            TraversePostOrder(node.right, list);
+        list.add(node.value);
+        return list;
+    }
+
+     List<Integer> DFSPreOrder(List<Integer> list) {
+        return TraversePreOrder(root, list);
+     }
+    List<Integer> TraversePreOrder(Node node, List<Integer> list) {
+        list.add(node.value);
+        if (node.left != null)
+            TraversePreOrder(node.left, list);
+        if (node.right != null)
+            TraversePreOrder(node.right, list);
+        return list;
+    }
 
     @Override
     public String toString() {
@@ -160,8 +169,18 @@ class Main {
         List<Integer> list = new ArrayList<>();
         Queue<Node> queue = new LinkedTransferQueue<>();
         queue.add(myTree.root);
+
         List<Integer> myList = myTree.BreadthFirstSearchR(list, queue);
         myList.forEach(System.out::println);
+
+        List<Integer> DFSInOrderResult = myTree.DFSInOrder(list);
+        DFSInOrderResult.forEach(System.out::println);
+
+        List<Integer> DFSPreOrderResult = myTree.DFSPreOrder(list);
+        DFSPreOrderResult.forEach(System.out::println);
+
+        List<Integer> DFSPosOrderResult = myTree.DFSPostOrder(list);
+        DFSPosOrderResult.forEach(System.out::println);
 
     }
 }
