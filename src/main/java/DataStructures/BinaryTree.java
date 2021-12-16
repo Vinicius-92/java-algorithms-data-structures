@@ -1,5 +1,13 @@
 package DataStructures;
 
+import com.sun.jmx.remote.internal.ArrayQueue;
+
+import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Queue;
+import java.util.concurrent.LinkedTransferQueue;
+
 public class BinaryTree {
     public Node root;
 
@@ -45,6 +53,23 @@ public class BinaryTree {
         }
     }
 
+    List<Integer> BreadthFirstSearch() {
+        Node currentNode = root;
+        List<Integer> list = new ArrayList<>();
+        Queue<Node> queue = new LinkedTransferQueue<>();
+        queue.add(root);
+        while (queue.size() > 0) {
+            currentNode = queue.poll();
+            list.add(currentNode.value);
+            if (currentNode.left != null) {
+                queue.add(currentNode.left);
+            }
+            if(currentNode.right != null) {
+                queue.add(currentNode.right);
+            }
+        }
+        return list;
+    }
     // Unfinished remove method
 //    void remove(int value) {
 //        if (root == null) return;
@@ -109,18 +134,15 @@ class Node {
 class Main {
     public static void main(String[] args) {
         BinaryTree myTree = new BinaryTree();
-        myTree.insert(10);
         myTree.insert(9);
-        myTree.insert(11);
+        myTree.insert(4);
+        myTree.insert(20);
         myTree.insert(1);
-        myTree.insert(2);
+        myTree.insert(6);
         myTree.insert(15);
-        myTree.insert(0);
-        myTree.insert(25);
-        System.out.println(myTree);
-//        myTree.remove(1);
-        System.out.println(myTree);
+        myTree.insert(170);
+//        System.out.println(myTree);
+        myTree.BreadthFirstSearch();
 
-        System.out.println(myTree.lookup(25));
     }
 }
