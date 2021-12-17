@@ -12,22 +12,18 @@ package solvedAlgorithms;
 import java.util.ArrayList;
 
 public class ReturnArrayWIthPlus1InTotalValue {
-    public static void main(String[] args) {
-
-    }
-
     static int[] ArrayPlusOne(int[] input) {
-        if (input[input.length - 1] > 0 && input[input.length - 1] < 9) {
-            input[input.length - 1] += 1;
-        } else {
-            ArrayList<Integer> arr = new ArrayList<>();
-            for (int i = 1; i < input.length - 1; i++) {
-                arr.add(input[i]);
+        int len = input.length;
+        int[] result = new int[len+1];
+        for (int i = len - 1; i >= 0; i--) {
+            if (input[i] < 9) {
+                input[i]++;
+                return input;
+            } else {
+                input[i] = 0;
             }
-            arr.add(1);
-            arr.add(0);
-            return new int[]{};
         }
-        return input;
+        result[0] = 1;
+        return result;
     }
 }
