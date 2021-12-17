@@ -7,7 +7,6 @@ public class mergeTwoSortedArrays {
 
         int[] merged = new int[input1.length + input2.length];
         int count = 0;
-
         for (int j : input1) {
             merged[count] = j;
             count++;
@@ -16,7 +15,6 @@ public class mergeTwoSortedArrays {
             merged[count] = j;
             count++;
         }
-
         for (int i = 0; i < merged.length - 1; i++) {
             int aux1 = merged[i];
             int aux2 = merged[i + 1];
