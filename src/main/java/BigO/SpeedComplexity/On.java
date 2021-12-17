@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class On {
 
-    // This is a O(n) functions, the amount of operations increase as the input increases
+    // This is a O(n) functions, the amount of operations increases as the input increases
     // in a linear way.
     static void findNemo(String[] array) {
         for (String s : array)
