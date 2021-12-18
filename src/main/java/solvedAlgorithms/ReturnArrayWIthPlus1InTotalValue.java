@@ -9,8 +9,6 @@ package solvedAlgorithms;
     Ex2: [9] => [1,0]
  */
 
-import java.util.ArrayList;
-
 public class ReturnArrayWIthPlus1InTotalValue {
     static int[] ArrayPlusOne(int[] input) {
         int len = input.length;

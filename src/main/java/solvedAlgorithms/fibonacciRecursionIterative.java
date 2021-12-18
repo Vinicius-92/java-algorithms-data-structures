@@ -9,6 +9,7 @@ public class fibonacciRecursionIterative {
 
     // O(n) --> Linear
     static int fibonacciIterative(int input) {
+        if (input == 0) return 0;
         int[] arr = new int[input + 1];
         arr[0] = 0;
         arr[1] = 1;
