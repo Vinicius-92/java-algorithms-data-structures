@@ -1,5 +1,13 @@
 ## Repository for studies of Algorithms and Data Structures in Java.
+  <p align='center'>
+    <a href="https://api.whatsapp.com/send?phone=5519996359084">
+      <img src="https://img.shields.io/badge/WHATSAPP-%2325D366.svg?&style=for-the-badge&logo=whatsapp&logoColor=white" />    
+    </a>
+    <a href="https://www.linkedin.com/in/vinicius-92/">
+      <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />
+    </a>
 
+  </p>
 ### Below there is a list of every problem solved contained in this repo:
 * Climbing stairs count ways to do it (1 and 2 steps)
 * Common char between arrays
