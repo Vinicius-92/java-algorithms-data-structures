@@ -30,6 +30,8 @@
 * Two sum returning indexes
 * Valida parenthesis closing
 * Ways to decode alphabet to integer
+* First non repeating character
+* Binary search an array
 ```JAVA
-int count = 18;
+int count = 20;
 ```
