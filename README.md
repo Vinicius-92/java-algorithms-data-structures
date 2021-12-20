@@ -35,6 +35,7 @@
 * Search insert position in sorted array
 * Best time to buy and sell stocks
 * Reverse order of words in string
+* Remove element from array
 ```JAVA
-int count = 23;
+int count = 24;
 ```
