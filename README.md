@@ -32,6 +32,7 @@
 * Ways to decode alphabet to integer
 * First non repeating character
 * Binary search an array
+* Search insert position in sorted array
 ```JAVA
-int count = 20;
+int count = 21;
 ```
