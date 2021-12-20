@@ -36,6 +36,7 @@
 * Best time to buy and sell stocks
 * Reverse order of words in string
 * Remove element from array
+* Length of the longest substring
 ```JAVA
-int count = 24;
+int count = 25;
 ```
