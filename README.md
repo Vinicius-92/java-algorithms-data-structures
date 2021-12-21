@@ -37,6 +37,7 @@
 * Reverse order of words in string
 * Remove element from array
 * Length of the longest substring
+* RPN Calculator - Stacking entries
 ```JAVA
-int count = 25;
+int count = 26;
 ```
