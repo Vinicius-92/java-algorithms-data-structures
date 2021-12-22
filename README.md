@@ -39,6 +39,7 @@
 * Length of the longest substring
 * RPN Calculator - Stacking entries
 * Longest common prefix
+* Length of Last Word
 ```JAVA
-int count = 27;
+int count = 28;
 ```
