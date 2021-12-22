@@ -46,6 +46,7 @@
 * Running sum of 1d array (Fibonacci array)
 * Defacing IP Address
 * Richest Customer Wealth
+* Shuffle An Array
 ```JAVA
-int count = 34;
+int count = 35;
 ```
