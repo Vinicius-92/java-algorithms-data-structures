@@ -45,6 +45,7 @@
 * Final Value of Variable After Performing Operations
 * Running sum of 1d array (Fibonacci array)
 * Defacing IP Address
+* Richest Customer Wealth
 ```JAVA
-int count = 33;
+int count = 34;
 ```
