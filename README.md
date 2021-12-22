@@ -43,6 +43,7 @@
 * Roman to integer
 * Concatenation of the same array
 * Final Value of Variable After Performing Operations
+* Running sum of 1d array (Fibonacci array)
 ```JAVA
 int count = 31;
 ```
