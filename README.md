@@ -42,6 +42,7 @@
 * Length of Last Word
 * Roman to integer
 * Concatenation of the same array
+* Final Value of Variable After Performing Operations
 ```JAVA
-int count = 30;
+int count = 31;
 ```
