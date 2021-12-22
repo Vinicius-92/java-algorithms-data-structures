@@ -1,6 +1,7 @@
 package SolvedAlgorithms;
 
 import java.util.HashMap;
+import java.util.Locale;
 
 /*
     Should return the first non repeating char of a given string.

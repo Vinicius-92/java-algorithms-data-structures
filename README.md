@@ -38,6 +38,7 @@
 * Remove element from array
 * Length of the longest substring
 * RPN Calculator - Stacking entries
+* Longest common prefix
 ```JAVA
-int count = 26;
+int count = 27;
 ```
