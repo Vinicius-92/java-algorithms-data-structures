@@ -1,4 +1,4 @@
-package solvedAlgorithms;
+package SolvedAlgorithms;
 
 /*
  * Given two linked lists, transform the result of reversed order

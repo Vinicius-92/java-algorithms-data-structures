@@ -1,4 +1,4 @@
-package solvedAlgorithms;
+package SolvedAlgorithms;
 
 public class ReverseAnInteger {
     static int Reverse(int x) {

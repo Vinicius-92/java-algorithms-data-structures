@@ -1,4 +1,4 @@
-package solvedAlgorithms;
+package SolvedAlgorithms;
 
 import com.sun.javaws.exceptions.InvalidArgumentException;
 

@@ -1,4 +1,4 @@
-package solvedAlgorithms;
+package SolvedAlgorithms;
 
 public class waysToDecodeAlphabetToInt {
 

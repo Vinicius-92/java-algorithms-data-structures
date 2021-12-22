@@ -1,4 +1,4 @@
-package solvedAlgorithms;
+package SolvedAlgorithms;
 
 import java.util.ArrayList;
 import java.util.Arrays;

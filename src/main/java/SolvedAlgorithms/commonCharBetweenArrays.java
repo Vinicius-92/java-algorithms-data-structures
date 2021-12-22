@@ -1,4 +1,4 @@
-package solvedAlgorithms;
+package SolvedAlgorithms;
 
 /*
     Given 2 arrays, create a function that lets a user know (true/false) whether

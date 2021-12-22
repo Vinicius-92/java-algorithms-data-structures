@@ -1,4 +1,4 @@
-package solvedAlgorithms;
+package SolvedAlgorithms;
 
 import java.util.Collections;
 import java.util.LinkedList;

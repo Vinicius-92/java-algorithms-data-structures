@@ -1,4 +1,4 @@
-package solvedAlgorithms;
+package SolvedAlgorithms;
 
 public class fibonacciRecursionIterative {
     // O(2^n) --> Exponential time
