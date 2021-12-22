@@ -4,7 +4,7 @@ package SolvedAlgorithms;
     Return the running sum of nums.
  */
 public class RunningSumOf1dArray {
-    static int[] FibonnaciArray(int[] nums) {
+    static int[] FibonacciArray(int[] nums) {
         for (int i = 1; i < nums.length; i++)
             nums[i] += nums[i - 1];
         return nums;
