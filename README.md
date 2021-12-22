@@ -40,6 +40,7 @@
 * RPN Calculator - Stacking entries
 * Longest common prefix
 * Length of Last Word
+* Roman to integer
 ```JAVA
-int count = 28;
+int count = 29;
 ```
