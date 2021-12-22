@@ -41,6 +41,7 @@
 * Longest common prefix
 * Length of Last Word
 * Roman to integer
+* Concatenation of the same array
 ```JAVA
-int count = 29;
+int count = 30;
 ```
