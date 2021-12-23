@@ -49,6 +49,7 @@
 * Shuffle An Array
 * Valida palindrome
 * Contains duplicate in array
+* Kids With the Greatest Number of Candies
 ```JAVA
-int count = 37;
+int count = 38;
 ```
