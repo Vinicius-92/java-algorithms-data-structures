@@ -50,6 +50,7 @@
 * Valida palindrome
 * Contains duplicate in array
 * Kids With the Greatest Number of Candies
+* Subtract the Product and Sum of Digits of an Integer
 ```JAVA
-int count = 38;
+int count = 39;
 ```
