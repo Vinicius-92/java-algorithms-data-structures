@@ -47,6 +47,7 @@
 * Defacing IP Address
 * Richest Customer Wealth
 * Shuffle An Array
+* Valida palindrome
 ```JAVA
 int count = 35;
 ```
