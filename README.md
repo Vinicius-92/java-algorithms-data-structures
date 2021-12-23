@@ -48,6 +48,7 @@
 * Richest Customer Wealth
 * Shuffle An Array
 * Valida palindrome
+* Contains duplicate in array
 ```JAVA
-int count = 35;
+int count = 37;
 ```
