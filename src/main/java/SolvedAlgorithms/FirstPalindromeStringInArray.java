@@ -1,6 +1,14 @@
 package SolvedAlgorithms;
 
-public class ValidPalindrome {
+public class FirstPalindromeStringInArray {
+
+    static String firstPalindrome(String[] words) {
+        for (String w : words) {
+            if (isPalindrome(w)) return w;
+        }
+        return "";
+    }
+
     static boolean isPalindrome(String s) {
         String cleanString = s.trim().replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
         String reversedString = reverse(cleanString);
@@ -17,10 +25,5 @@ public class ValidPalindrome {
             count++;
         }
         return String.valueOf(reversed);
-    }
-
-    public static void main(String[] args) {
-        String s = "1A man, a plan, a canal: Panama1";
-        System.out.println(isPalindrome(s));
     }
 }

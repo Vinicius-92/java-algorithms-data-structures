@@ -1,6 +1,6 @@
 package SolvedAlgorithms;
 
-public class waysToDecodeAlphabetToInt {
+public class WaysToDecodeAlphabetToInt {
 
     static int waysToDecode(String A) {
         double number = Double.parseDouble(A);

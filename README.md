@@ -47,11 +47,12 @@
 * Defacing IP Address
 * Richest Customer Wealth
 * Shuffle An Array
-* Valida palindrome
+* Valid palindrome
 * Contains duplicate in array
 * Kids With the Greatest Number of Candies
 * Subtract the Product and Sum of Digits of an Integer
 * Jewels and Stones
+* First Palindrome String In Array
 ```JAVA
-int count = 40;
+int count = 41;
 ```
