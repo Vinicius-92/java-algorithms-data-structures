@@ -1,9 +1,5 @@
 package SolvedAlgorithms;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 public class SubtracttheProductandSumofDigitsofanInteger {
     static int subtractProductAndSum(int n) {
         int prod = 1;

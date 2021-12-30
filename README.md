@@ -51,6 +51,7 @@
 * Contains duplicate in array
 * Kids With the Greatest Number of Candies
 * Subtract the Product and Sum of Digits of an Integer
+* Jewels and Stones
 ```JAVA
-int count = 39;
+int count = 40;
 ```
