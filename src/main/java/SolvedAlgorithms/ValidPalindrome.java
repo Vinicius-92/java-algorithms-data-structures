@@ -4,7 +4,6 @@ public class ValidPalindrome {
     static boolean isPalindrome(String s) {
         String cleanString = s.trim().replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
         String reversedString = reverse(cleanString);
-        System.out.println(reversedString);
         return cleanString.equals(reversedString);
     }
 

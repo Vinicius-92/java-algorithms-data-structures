@@ -5,7 +5,7 @@ import java.util.Collections;
 
 public class Arrays {
     public static void main(String[] args) {
-        ArrayList<Character> array = new ArrayList<Character>();
+        ArrayList<Character> array = new ArrayList<>();
         Collections.addAll(array, 'a', 'b', 'c', 'd');
         // ['a', 'b', 'c', 'd']
         // Push or add O(1) but can be O(n) for dynamic arrays such as ArrayList

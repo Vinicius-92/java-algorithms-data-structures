@@ -53,6 +53,7 @@
 * Subtract the Product and Sum of Digits of an Integer
 * Jewels and Stones
 * First Palindrome String In Array
+* Binary Exponentiation
 ```JAVA
-int count = 41;
+int count = 43;
 ```

@@ -3,16 +3,13 @@ package SolvedAlgorithms;
 public class FirstPalindromeStringInArray {
 
     static String firstPalindrome(String[] words) {
-        for (String w : words) {
-            if (isPalindrome(w)) return w;
-        }
+        for (String w : words) if (isPalindrome(w)) return w;
         return "";
     }
 
     static boolean isPalindrome(String s) {
         String cleanString = s.trim().replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
         String reversedString = reverse(cleanString);
-        System.out.println(reversedString);
         return cleanString.equals(reversedString);
     }
 
